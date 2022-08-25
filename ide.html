@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Python Compiler</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="header">Python Compiler</div>
+
+    <!-- <form method="post" action="" onsubmit="return false"> -->
+    <div class="editor" id="editor">#Python compiler by Adarsh</div>
+
+    <div style="background-image: linear-gradient(to right,black 10%, #2c2a2a 50%, black); border : 2.5px solid rgba(66, 66, 80, 0.7);
+    box-shadow:
+    4px 4px 10px rgba(0, 0, 0, 0.3),
+    inset -4px -4px 10px rgba(44, 40, 40, 0.5),
+    inset 1px 1px 50px rgba(0, 0, 0, 0.5);">
+        <div style="padding-top: 15px;">
+            <button class="btn" onclick="executeCode()"> Run </button>
+            <button class="copy" onclick="myFunction()">Copy text !</button>
+        </div>
+        <div style="padding :20px; margin-left: 19px;">
+            <textarea type="text" name="arg" id="arg" style="width: 34.5%; height:7vw;background-color: rgb(150, 147, 147);border : 1.3px solid rgba(18, 18, 29, 0.7);
+                box-shadow:
+                4px 4px 10px rgba(0, 0, 0, 0.3),
+                inset -4px -4px 10px rgba(44, 40, 40, 0.5),
+                inset 1px 1px 50px rgba(0, 0, 0, 0.5);" placeholder="Input"></textarea>
+        </div>
+    </div>
+    </form>
+
+
+
+
+    <textarea class="output" placeholder="Output Screen"></textarea>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/lib/ace.js"></script>
+    <script src="js/lib/theme-monokai.js"></script>
+    <script src="js/ide.js"></script>
+
+
+</body>
+
+</html>
